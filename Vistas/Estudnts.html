@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="searchInput">ID del estudiante:</label>
+    <input type="text" id="searchInput" />
+    <button id="searchButton">Buscar por ID a un estudiante</button>
+    <button id="EstCourse">Buscar por IDcourse a los estudiantes del curso</button>
+    <button id="ApiButton">Ver Estudiantes</button>
+    <p></p>
+    <p></p>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>ID del Curso</th>
+            </tr>
+        </thead>
+        <tbody id="apiData"></tbody>
+    </table>
+
+    <p></p>
+    <p></p>
+
+    <script src='./Estudnts.js'></script>
+
+</body>
+
+</html>
